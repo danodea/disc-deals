@@ -1,0 +1,17 @@
+{
+  "name": "disc-deals",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan O'Dea",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "debug": "^4.3.3",
+    "disconnect": "^1.2.2",
+    "jsdom": "^19.0.0"
+  }
+}
