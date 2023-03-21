@@ -28,6 +28,7 @@ module.exports = function getListings (id) {
             })
             fs.writeFileSync(path.join(__dirname, '..', `/data/listings/${id}/${Date.now()}`), JSON.stringify(listings));
         }).catch((error) => {
+            debug(`Error getting ${id}`);
             debug(error);
         })
 }

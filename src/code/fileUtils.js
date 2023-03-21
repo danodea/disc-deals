@@ -76,3 +76,5 @@ const emptyAllListingFolders = function (names) {
     }
 
 }
+
+createAllListingFolders(masterIDs);

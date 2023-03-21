@@ -15,8 +15,8 @@ const getFullWantlist = async function (page = 1) {
         if (data.pagination.page < data.pagination.pages) {
             getFullWantlist(data.pagination.page + 1)
         } else {
-            fs.writeFileSync(path.join(__dirname, '../data/masterIDs.json'), JSON.stringify([...masterIDs]));
-            // fs.writeFileSync(path.join(__dirname, '/albums.json'), JSON.stringify([...albums]));
+            // fs.writeFileSync(path.join(__dirname, '../data/masterIDs.json'), JSON.stringify([...masterIDs]));
+            fs.writeFileSync(path.join(__dirname, '../data/albums.json'), JSON.stringify([...albums]));
         }
 })};
 
