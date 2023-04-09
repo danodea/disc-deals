@@ -26,7 +26,7 @@ module.exports = function getListings (id) {
                 listingData.price = listing.querySelector('.price').textContent;
                 listings.push(listingData);
             })
-            fs.writeFileSync(path.join(__dirname, '..', `/data/listings/${id}/${Date.now()}`), JSON.stringify(listings));
+            // fs.writeFileSync(path.join(__dirname, '..', `/data/listings/${id}/${Date.now()}`), JSON.stringify(listings));
         }).catch((error) => {
             debug(`Error getting ${id}`);
             debug(error);
