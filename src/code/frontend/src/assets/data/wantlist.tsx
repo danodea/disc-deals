@@ -1,4 +1,10 @@
-module.exports = {
+interface Master {
+  id: number;
+  artist: string;
+  albumName: string;
+}
+
+export const data: Record<number, Master> = {
   2918: { id: 2918, artist: 'Bright Eyes', albumName: 'Letting Off The Happiness' },
   2923: { id: 2923, artist: 'Bright Eyes', albumName: 'Every Day And Every Night' },
   3037: { id: 3037, artist: 'Bright Eyes', albumName: 'Noise Floor (Rarities: 1998-2005)' },
